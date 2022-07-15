@@ -8,13 +8,13 @@ body {
     grid-template-columns: repeat(16, 1fr);
 }
 
-.squareDivs {
+#squareDivs {
 	border: 1px solid black;
 	height: 6rem;
 	width: 6rem;
     padding: 11px;
 }
 
-.squareDivs:hover {
+.colorHover {
     background-color: green;
 }
