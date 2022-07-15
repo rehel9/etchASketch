@@ -14,3 +14,7 @@ body {
 	width: 6rem;
     padding: 11px;
 }
+
+.squareDivs:hover {
+    background-color: green;
+}
