@@ -1,9 +1,9 @@
-const mainDiv = document.querySelector("#mainDiv");
+const sketchDiv = document.querySelector("#sketchDiv");
 
 for (let i = 0; i <= 255; i++){
     let diver = document.createElement("diver");
     diver.classList.add("squareDivs"); 
-    mainDiv.appendChild(diver);
+    sketchDiv.appendChild(diver);
 };
 
 const squareDivs = document.querySelectorAll(".squareDivs");
