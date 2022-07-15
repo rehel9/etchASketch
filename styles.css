@@ -12,8 +12,8 @@ body {
 
 /* Sketch CSS */
 #sketchDiv {
-    width: 512px;
-    height: 512px;
+    width: 960px;
+    height: 960px;
 }
 
 .grid {
