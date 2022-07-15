@@ -1,13 +1,17 @@
 const mainDiv = document.querySelector("#mainDiv");
 
 for (let i = 0; i <= 255; i++){
-    let div = document.createElement("div");
-    div.id = "squareDivs"; 
-    mainDiv.appendChild(div);
+    let diver = document.createElement("diver");
+    diver.classList.add("squareDivs"); 
+    mainDiv.appendChild(diver);
 };
 
-const squareDivs = document.querySelector("#squareDivs");
+const squareDivs = document.querySelectorAll(".squareDivs");
 
-squareDivs.addEventListener("mousemove", () => {
-    squareDivs.classList.add("colorHover");
-})
+squareDivs.forEach((div) => {
+
+    div.addEventListener("mouseover", () => {
+        div.classList.add("colorHover");
+        })
+    }
+);
