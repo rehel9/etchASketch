@@ -2,6 +2,11 @@ body {
     margin: 0px;
 }
 
+#mainDiv {
+    width: 512px;
+    height: 512px;
+}
+
 .grid {
     display: grid;
     /*gap: 1rem;*/
@@ -10,8 +15,8 @@ body {
 
 .squareDivs {
 	border: 1px solid black;
-	height: 6rem;
-	width: 6rem;
+	height: 2px;
+	width: 2px;
     padding: 11px;
 }
 
