@@ -12,20 +12,26 @@ function createGrid(leftSideNumber, rightSideNumber){
 createGrid(16, 16);
 
 const boton = document.querySelector("#boton");
-const squareDivs = document.querySelectorAll(".squareDivs");
+
+function addListenersForColoring (){
+    const squareDivs = document.querySelectorAll(".squareDivs");
+
+    squareDivs.forEach((div) => {
+        div.addEventListener("mouseover", () => {
+            div.classList.add("colorHover");
+            })
+        }
+    );
+}
+
+addListenersForColoring();
 
 boton.addEventListener("click", () => {
-    let leftSideNumber = parseInt(prompt("How many squares for left side?", "16"));
-    let rightSideNumber = parseInt(prompt("How many squares for right side?", "16"));
+    let leftSideNumber = parseInt(prompt("How many squares for left side?", 16));
+    let rightSideNumber = parseInt(prompt("How many squares for right side?", 16));
     while (sketchDiv.lastElementChild) {
         sketchDiv.removeChild(sketchDiv.lastElementChild);
     }
     createGrid(leftSideNumber, rightSideNumber);
+    addListenersForColoring();
 });    
-
-squareDivs.forEach((div) => {
-    div.addEventListener("mouseover", () => {
-        div.classList.add("colorHover");
-        })
-    }
-);
