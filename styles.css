@@ -19,14 +19,14 @@ body {
 .grid {
     display: grid;
     /*gap: 1rem;*/
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(6%, 1fr));
 }
 
 .squareDivs {
-	border: 1px solid black;
-	height: 38px;
-	width: 36px;
-    padding: 11px;
+	position: relative;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-top: 100%;
 }
 
 .colorHover {
