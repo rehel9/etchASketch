@@ -28,7 +28,13 @@ const boton = document.querySelector("#boton");
 
 boton.addEventListener("click", () => {
     let leftSideNumber = parseInt(prompt("How many squares for left side?", 16));
+    if (leftSideNumber > 100){
+        return alert("The limit is 100!!");
+    }
     let rightSideNumber = parseInt(prompt("How many squares for right side?", 16));
+    if (rightSideNumber > 100){
+        return alert("The limit is 100!!");
+    }
     while (sketchDiv.lastElementChild) {
         sketchDiv.removeChild(sketchDiv.lastElementChild);
     }
