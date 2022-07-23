@@ -11,8 +11,6 @@ function createGrid(leftSideNumber, rightSideNumber){
 
 createGrid(16, 16);
 
-const boton = document.querySelector("#boton");
-
 function addListenersForColoring (){
     const squareDivs = document.querySelectorAll(".squareDivs");
 
@@ -25,6 +23,8 @@ function addListenersForColoring (){
 }
 
 addListenersForColoring();
+
+const boton = document.querySelector("#boton");
 
 boton.addEventListener("click", () => {
     let leftSideNumber = parseInt(prompt("How many squares for left side?", 16));
