@@ -38,6 +38,8 @@ boton.addEventListener("click", () => {
     while (sketchDiv.lastElementChild) {
         sketchDiv.removeChild(sketchDiv.lastElementChild);
     }
+    sketchDiv.classList.remove("grid");
+    sketchDiv.setAttribute("style", `display: grid; grid-template-columns: repeat(${leftSideNumber}, 1fr)`); 
     createGrid(leftSideNumber, rightSideNumber);
     addListenersForColoring();
 });    
